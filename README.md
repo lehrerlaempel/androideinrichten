@@ -1,19 +1,21 @@
 # Tutorial: Wie man Android sicher einrichtet (Eine Anleitung)
-v 3.1 | Stand: Juli 2021 | Lizenz: CC BY-NC-SA 4.0
+v 4.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+
+Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
 # Vorwort
 Diese Anleitung soll dabei helfen, Android-Smartphones sicher einzurichten. Mit *sicher* ist dabei einerseits ein so datenschutzfreundliches und schwer anzugreifendes Gerät wie möglich gemeint. Andererseits soll sich diese Anleitung aber auf Maßnahmen beschränken, die durchschnittliche Anwender:innen nicht überfordern und die alltägliche Benutzung des Handys möglichst wenig beeinflussen. Es geht hier also explizit nicht um ein möglichst gehärtetes System für maximalen Schutz, sondern um so viel Sicherheit, wie ohne größere Einschränkungen eben möglich ist.
 
-*Für sicherheitsempfindliche Einsatzszenarien sollte über einen vollständigen Verzicht auf die Google-Dienste nachgedacht und stattdessen ein Google-freies System wie zum Beispiel [/e/](https://e.foundation/), [LineageOS](https://lineageos.org/) oder [GrapheneOS](https://grapheneos.org/) verwendet werden. Dies ist jedoch explizit nicht Thema dieses Tutorials. Wir gehen für diese Anleitung davon aus, dass Sie prinzipiell kein Problem mit GoogleDiensten auf Ihrem Smartphone haben.*
+*Für sicherheitsempfindliche Einsatzszenarien sollte zunächst ein Google-freies System wie zum Beispiel [LineageOS](https://lineageos.org/) oder besser [GrapheneOS](https://grapheneos.org/) auf dem Smartphone installiert werden. Mehr dazu z.B. [hier](https://www.kuketz-blog.de/grapheneos-das-android-fuer-sicherheits-und-datenschutzfreaks/) und [hier](https://www.kuketz-blog.de/android-ohne-google-take-back-control-teil1/). Für alle, die selbst kein Betriebssystem auf einem Smartphone installieren wollen: Es gibt auch Handys, die bereites mit einem Android ohne GoogleDienste verkauft werden, z.B. [hier](https://esolutions.shop/). Alternativ kann für sensible Einsatzzwecke ein speziell vom Hersteller für sicherheitsempfindliche Szenarien entwickeltes Geräte verwendet werden, wie z.B. ein [NitroPhone](https://www.nitrokey.com/de/news/2021/nitrophone-das-sicherste-android-des-planeten), das bereits sicher konfiguriert beim Kunden ankommt. Dies alles ist jedoch explizit nicht Thema dieses Tutorials. Wir gehen für diese Anleitung davon aus, dass Sie prinzipiell kein Problem mit GoogleDiensten auf Ihrem Smartphone haben und das gekaufte gewöhnliche Smartphone mit dem vorinstallierte Betriebssystem nutzen möchten.*
 
 Es wird übrigens dringend empfohlen, die Anleitung in der hier beschriebenen Reihenfolge zu durchlaufen. Sofern Sie aber bereits vor einem installierten Handy sitzen und nicht alles neu aufsetzen können oder wollen, können Sie sich aber auch selbstverständlich einzelne Kapitel herauspicken. Lieber nur einzelne Maßnahmen dieser Anleitung umsetzen, als keine!
 
-Ein letztes Wort zum Schluss, bevor es endlich losgeht: Diese Anleitung beinhaltet lediglich allgemeine Empfehlungen. Es kann durchaus sein, dass diese Anleitung Fehler enthält oder aufgrund anderer Soft-/Hardware einige Punkte auf Ihrem System anders heißen. Haben Sie Mut, Ihr System selbst einzurichten. Wir möchten Sie mit dieser Anleitung dabei unterstützen. Aber zögern Sie bei Fragen bitte nie, sich im Internet oder bei fachkundigen Personen aus Ihrem Umfeld Hilfe zu holen.
+Bevor es endlich losgeht: Diese Anleitung beinhaltet lediglich allgemeine Empfehlungen. Es kann durchaus sein, dass diese Anleitung Fehler enthält oder aufgrund anderer Soft-/Hardware einige Punkte auf Ihrem System anders heißen. Haben Sie Mut, Ihr System selbst einzurichten. Wir möchten Sie mit dieser Anleitung dabei unterstützen. Aber zögern Sie bei Fragen bitte nie, sich im Internet oder bei fachkundigen Personen aus Ihrem Umfeld Hilfe zu holen.
 
 # 1 Welches Gerät kaufen?
 Das Angebot an Android-Geräten ist gefühlt fast unendlich groß. Es gibt zahlreiche Hersteller, die meist mehrmals im Jahr neue Geräte vorstellen. Für welches Gerät Sie sich entscheiden, sollten Sie dabei aber nicht nur von persönlichem Geschmack oder Sympathie zu einer bestimmen Marke abhängig machen. 
 
-Sobald der Hersteller eines Smartphones aufhört, dieses mit Updates zu versorgen, wird es quasi unmöglich, einen sicheren Betrieb des Gerätes zu gewährleisten. Ein Gerät ohne die neusten Sicherheitsupdates sollten halbwegs sicherheitsbewusste Nutzer:innen nicht nutzen! Anders als bei einem Computer ist es bei einem Smartphone aber ein relativ komplexer und fehleranfälliger Prozess, ein alternatives Betriebssystem aufzuspielen. Updates gibt es also für die meisten Nutzer:innen faktisch nur, solange der Hersteller Sie mit solchen versorgt. Danach sind die Geräte quasi unbrauchbar.
+Sobald der Hersteller eines Smartphones aufhört, dieses mit Updates zu versorgen, wird es quasi unmöglich, einen sicheren Betrieb des Gerätes zu gewährleisten. Ein Gerät ohne die neusten Sicherheitsupdates sollten halbwegs sicherheitsbewusste Nutzer:innen nicht nutzen! Man könnte sagen: Die sicherste Konfiguration bringt nichts, wenn das Betriebssystem als Basis offen steht wie ein Scheunentor. Und genau das tut es: Zu alter Software gibt es diverse offen bekannte Sicherheitslücken. Anders als bei einem Computer ist es bei einem Smartphone aber ein relativ komplexer und fehleranfälliger Prozess, ein alternatives Betriebssystem aufzuspielen. Updates gibt es also für die meisten Nutzer:innen faktisch nur, solange der Hersteller Sie mit solchen versorgt. Danach sind die Geräte quasi unbrauchbar.
 
 Aber woher bekommt man ein Handy, das lange mit Updates versorgt wird? Der einfachste Weg: Kaufen Sie ein Gerät aus dem [Android One Programm](https://www.android.com/one/). Verschiedene Hersteller bieten Ihnen unter diesem Label Geräte unterschiedlichster Preisklassen an, bei denen Sie ab Marktstart des jeweiligen Handys garantiert zwei Jahre Upgrades auf neue Android-Versionen sowie drei Jahre regelmäßig Sicherheitsupdates erhalten. Zudem ist auf den Geräten meist wenig [Bloatware](https://de.wikipedia.org/wiki/Bloatware) installiert, die bei vielen Android-Handys sonst erst wieder umständlich entfernt werden muss.
 
@@ -22,59 +24,83 @@ Sollten Sie sich für ein anders Gerät entscheiden, stellen Sie unbedingt vor d
 # 2 Vorbereitung der Hardware
 Vor dem ersten Gerätestart sollten die **Kameras** (mindestens die Frontkamera) mit einer Abdeckung oder einem blickdichtem Aufkleber verdeckt werden. Diese sollten nur bei Bedarf entfernt und danach wieder angebracht werden.
 
-Es empfiehlt sich zum Schutz vor Lauschangriffen durch Sprachassistenten oder Schadsoftware auch, das **Mikrofon** zu deaktivieren, wann immer dieses nicht benötigt wird. Anders als z.B. bei einem Laptop gestaltet sich das bei für durchschnittliche Anwender:innen bei einem Smartphone jedoch relativ schwierig. Ein günstiger und einfacher aber interessanter Ausweg sind kleine Stecker wie z.B. der *CAMeleon Mikrofon Blocker* oder der *Privise Mikrofon Blocker*, die für das Smartphone ein Headset simulieren und dadurch einen guten Grundschutz vor unerwünschtem Horchen bieten.
+Es empfiehlt sich zum Schutz vor Lauschangriffen durch Sprachassistenten oder Schadsoftware auch, das **Mikrofon** zu deaktivieren, wann immer dieses nicht benötigt wird. Anders als z.B. bei einem Laptop gestaltet sich das bei für durchschnittliche Anwender:innen bei einem Smartphone jedoch relativ schwierig. Ein günstiger und einfacher aber interessanter Ausweg sind kleine Stecker wie z.B. der *CAMeleon Mikrofon Blocker* oder der *Privise Mikrofon Blocker*, die für das Smartphone ein Headset simulieren und dadurch einen guten Grundschutz vor unerwünschtem Horchen bieten. Leider gibt das Gerät dann auch erstmal keinen Ton mehr aus, solange der Stecker im Gerät ist.
+
+Wenn die Stecker für Sie keine Lösung sind, werden Sie wohl erstmal damit leben müssen, ein aktiviertes Mikrofon durch die Gegen zu tragen. Wichtig ist dann vor allem, dass Sie sich dessen bewusst sind und das Gerät vielleicht nicht ausgerechnet mit ins Schlafzimmer oder die nächste Besprechung nehmen. Auch wenn man sich das heute kaum noch vorstellen kann: Ein Smpartphone muss seiner Besitzerin nicht überall hin auf Schritt und Tritt folgen. ;-)
 
 # 3 Android Neugerät Ersteinrichtung
-Da viele Smartphone-Hersteller für ihre Geräte eigene Benutzeroberflächen/ Menüstrukturen entwickeln, heißen die folgenden Punkte oft anders und auch die Reihenfolge kann variieren. Im Wesentlichen müssten die Schritte beim ersten Schritt aber wie folgt heißen:
+Da viele Smartphone-Hersteller für ihre Geräte eigene Benutzeroberflächen/ Menüstrukturen entwickeln, heißen die folgenden Punkte oft anders und auch die Reihenfolge kann variieren. Im Wesentlichen müssten die Schritte beim ersten Start aber wie folgt heißen:
 
-*(Bitte versuchen Sie wie beschrieben, auch tatsächlich erst in Kapitel 6 ein Google-Konto anzulegen bzw. mit dem Gerät zu verknüpfen!)*
+*(Bitte versuchen Sie wie beschrieben, wenn überhaupt auch tatsächlich erst in Kapitel 6 ein Google-Konto anzulegen bzw. mit dem Gerät zu verknüpfen!)*
 
+- Gerät ohne eingelegte SIM-Karte einschalten und Aufforderung zum Herstellen einer Mobilfunkverbindung überspringen
+- Verbindung mit einem WLAN überspringen (Sofern irgendwie möglich, sollten Sie Ihre Geräte immer offline einrichten!)
 - Sprache und ggf. Land auswählen
-- Gerät einschalten und Aufforderung zum Herstellen einer Mobilfunkverbindung überspringen
-- Verbindung mit einem WLAN überspringen (Samsung lässt teilweise eine Einrichtung ohne Internet nicht zu...)
 - Zeitzone, Datum und Uhrzeit einstellen
+
+Im Folgenden will Ihr System Ihnen dann noch diverse Features unterjubeln, die primär auf zusätzliche Datenerhebung hinauslaufen. Wir lehnen also möglichst viel ab.
+
 - Deaktivieren von folgenden Google Diensten:
   - Standort verwenden
   - WLAN-Suche zulassen
   - Nutzungs- und Diagnosedaten senden
 - Entsperrung mit Gesichtserkennung überspringen (Bietet keine ausreichende Sicherheit, weil es sich teilweise mit wenig Aufwand überlisten lässt oder aber z.B. in Grenzkontrollen oder bei Hausdurchsuchungen in Anwesenheit der Nutzer:innen durch Beamte entsperrt werden kann)
-- Displaysperre einrichten, die mindestens aus einem 8-stelligem PIN besteht (erst dadurch wird die Geräteverschlüsselung aktiviert)
+- Displaysperre einrichten, die mindestens aus einem 8-stelligem PIN, besser aus einem Passwort besteht (erst dadurch wird die Geräteverschlüsselung aktiviert)
 - Im nächsten Schritt die Teilnahme am Nutzererfahrungsprogramm ablehnen
-- Wenn das Telefon den Startbildschirm anzeigt, sollten als erstes alle nicht benötigten Netzwerkverbindungen und Schnittstellen wie z.B.: Bluetooth, GPS, NFC, WLAN usw. deaktiviert werden
+
+Wenn das Telefon dann den Startbildschirm anzeigt, sollten als erstes alle nicht benötigten Netzwerkverbindungen und Schnittstellen wie z.B.: Bluetooth, GPS, NFC, deaktiviert werden. Anschließend das Gerät auschalten.
   
 *Wird später der PIN oder Passwort vergessen, kann das Handy über Android Recovery (beim Gerätestart wird dazu eine herstellerabhängige Tastenkombination gedrückt) zurückgesetzt werden. Dabei werden jedoch alle Daten auf dem internen Gerätespeicher gelöscht. Achtung: Dies funktioniert oft nicht mehr, sobald ein Google-Konto auf dem Gerät registriert ist, dann werden nach dem Zurücksetzen die Zugangsdaten des alten Google-Kontos abgefragt, bevor das Gerät wieder neu eingerichtet werden kann. Sollten diese LogIn-Daten nicht vorliegen, kann das Handy ohne großen Aufwand nicht weiter benutzt werden! Sie sollten also die PIN sowie die Zugangsdaten für Ihr Google-Konto stets an einem sicheren Ort notieren, so dass Sie diese bei Bedarf nachschlagen können!*
 
 # 4 Der erste Start
 Da jeder Smartphone-Hersteller für seine Geräte eigene Benutzeroberflächen/ Menüstrukturen entwickelt, ist es nicht immer einfach die u.a. Einstellungen/ Menüpunkte zu finden. Android bietet jedoch in den Einstellungen eine Textsuche an (Lupen-Symbol). Gibt man hier zum Beispiel das Wort „Standort“ ein, werden alle Menüeinträge die den Suchbegriff „Standort“ enthalten angezeigt und es kann per Klick direkt in das entsprechende Suchergebnis/ Untermenü gesprungen werden.
 
-- SIM-Karte einsetzen und Gerät starten
-- Nicht benötigte Apps und Bloatware deinstallieren bzw. deaktivieren, sollte eine Deinstallation nicht möglich sein (Einstellungen -> Apps & Benachrichtigungen -> Alle Apps anzeigen)
-  - Systemrelevante Apps wie z.B.: die Androidtastatur (GBoard), Telefon, Google Play-Dienste, Playstore, PlayServices, oder Einstellungen sollten nicht deaktiviert oder deinstalliert werden
-  - Die folgenden Apps können ohne Probleme deinstalliert bzw. deaktiviert werden: Facebook, Netflix, Gmail, YouTube, Fotos, One Drive, Assistant, DIgital Wellbeing, Google News, Files by Google, Kalender, Provider-Apps, Gerätehersteller-Apps, Wetter, Werbung, Office, etc.
-- Gerät mit einem W-LAN oder über die SIM-Karte mit dem Internet verbinden
-- Systemupdates suchen und diese umgehend installieren (Einstellungen -> System -> Erweitert -> Systemaktualisierung)
+## 4.1 Updates
+Setzen Sie ggf. Ihre SIM-Karte in das Smartphone ein und starten Sie dieses. Stellen Sie dann bei Bedarf eine Verbindung mit einem WLAN Netzwerk her, um Ihre mobilen Daten zu schonen.
+
+Zunächst prüfen wir, ob Systemupdates verfügbar sind. Falls ja, installieren wir diese umgehen (*Einstellungen -> System -> Erweitert -> Systemaktualisierung*).
+
+Anschließend müssen wir die vorinstallierten Apps updaten (*Google-Play-Store öffnen ohne sich bei Google einzuloggen, drei Punkte oben rechts anklicken, Updates auswählen*).
+
+## 4.2 Nicht benötigte Software deinstallieren
+Sind alle Updates installiert, können wir damit beginnen, nicht benötigte Apps zu entfernen. Bedenken Sie: Jede App, die nicht auf Ihrem Gerät ist, kann weder Daten über Sie sammeln noch als Einfallstor für Schadsoftware dienen.
+
+Öffenen Sie also *Einstellungen -> Apps & Benachrichtigungen -> Alle Apps anzeigen* und löschen Sie alle Programme, die Sie nicht benötigen. Sollte eine Deinstallation nicht möglich sein, deaktivieren Sie die Apps. Haben Sie Mut zum Löschen. Zur Not kann man fehlende Programme wieder nachinstallieren.
+
+Die folgenden Apps können ohne Probleme deinstalliert bzw. deaktiviert werden: Facebook, Netflix, Gmail, YouTube, Fotos, One Drive, Assistant, Digital Wellbeing, Google, Google News, Files by Google, Kalender, Provider-Apps, Gerätehersteller-Apps, Wetter, Werbung, Office, etc.
+
+Im Endeffekt können Sie alles löschen außer einem Webbrowser, einer Tastatur (z.B. GBoard) den Google Play-Diensten, den Google Playstore, die Playservices und der Einstellungen-App.
+
+Keine Sorge: Im nächsten Kapitel besorgen wir uns datensparsame Alternativen zu den eben gelöschen Apps!
+
+## 4.3 Einstellungen prüfen
+Im Endeffekt können Sie jetzt einfach in Ruhe einmal durch alle Einstellungen Ihres Smartphones gehen. Nehmen Sie sich bitte Zeit und klicken Sie sich wirklich durch jedes Menü und Untermenü. Deaktivieren Sie dabei alles, was Sie nicht wirklich benötigen.
+
+Falls es jemand präziser möchte, hier ein paar Vorschläge von uns, was man einstellen könnte:
+
 - In den Standorteinstellungen (Einstellungen -> Standort) folgende Funktionen deaktivieren:
    - Google Standortgenauigkeit verbessern (standortbasierte Funktionen und Dienste)
    - WLAN-Suche und Bluetooth-Suche (standortbasierte Funktionen und Dienste)
 - Berechtigung auf App-Ebene überprüfen und nur die tatsächlich notwendigen Berechtigungen gewähren (Einstellungen -> Datenschutz -> Berechtigungsmanager). Lassen Sie sich hier von der Meldung, dass dann ggf. grundlegende Funktionen nicht mehr ordnungsgemäß funktionieren, nicht abschrecken. Zur Not können Sie ja jederzeit einzelne Berechtigungen wieder aktivieren.
-- unter Einstellungen -> Datenschutz -> Werbung die Funktion *Personalisierte Werbung deaktivieren* auswählen
-- Verbleibende Apps updaten (Google-Play-Store öffnen, drei Punkte oben rechts anklicken, Updates auswählen)
+- Unter Einstellungen -> Datenschutz -> Werbung die Funktion *Personalisierte Werbung deaktivieren* auswählen
 - Hintergrundaktualisierung für alles außer Messenger und Playstores über einen der zwei folgenden Wege deaktivieren:
   - Über *Einstellungen -> Apps & Benachrichtigungen -> Alle Apps anzeigen* für jede einzelne App unter *Erweitert -> Akku -> Hintergrundnutzung einschränken
   - Unter *Einstellungen -> Netzwerk&Internet -> Datensparmodus* den Datensparmodus aktivieren. Dann unter *Uneingeschränkten Zugriff* den Carrier Service, sämtliche verwendeten AppStores sowie die verwendeten Messenger freigeben.
 - Unter *Einstellungen -> System -> Sprachen und Eingaben -> Bildschirmtastatur -> Gboard* die Spracheingabe deaktivieren und unter *Erweitert* folgende Optionen deaktivieren: *Nutzungsstatistik, Personalisierung, Spracheingabe für alle verbessern*.
-- Ggf. vorhandene Micro-SD Karte einsetzen (z.B.: Import von Kontakten, Daten, Bildern usw.)
-  - das Gerät fragt wie der Speicher eingebunden werden soll (interner Gerätespeicher oder als externer Speicher)
-  - als interner Gerätespeicher wird die Micro-SD Karte verschlüsselt, mit dem Nachteil das diese nur noch im Smartphone gelesen und beschrieben werden kann. Plug and Play in einem neuen Telefon funktioniert hierbei nicht! Als externer Speicher eingebunden bleibt die Karte unverschlüsselt und Daten lassen sich auch außerhalb des Smartphones lesen, schreiben und sichern... natürlich auch von Unbefugten, wenn das verschlüsselte Smartphone verloren wird
 - Um Strom zu sparen bzw. die Akkulaufzeit zu verlängern können dann bei Bedarf unter *Einstellungen -> Display* noch die folgenden drei Einstellungen vorgenommen werden:
   - Dunkles Design aktivieren
   - Die Helligkeit auf das notwendige Minimum reduzieren
   - Unter *Hintergrund* einfarbig schwarz auswählen
 
-# 5 Alternative App-Stores
-Man kann mit einem Android-Smartphone erstaunlich weit kommen, ohne ein Google-Konto einzurichten. Hie nun zunächst ein Vorschlag, wie man ohne Google-Konto Apps installieren und updaten kann. Mehr zum Google-Play-Store bzw. einem Google-Konto dann im 6. Kapitel.
+## 4.4 SD-Karten
+Setzen Sie nun eine ggf. vorhandene Micro-SD Karte in das Gerät ein. das Gerät fragt dann, wie der Speicher eingebunden werden soll (interner Gerätespeicher oder als externer Speicher). Als **interner Gerätespeicher** wird die Micro-SD Karte verschlüsselt, mit dem Nachteil, dass diese nur noch im Smartphone gelesen und beschrieben werden kann. Plug and Play in einem neuen Telefon oder Ihrem Computer funktioniert dann nicht mehr! Als **externer Speicher** eingebunden bleibt die Karte unverschlüsselt und Daten lassen sich auch außerhalb des Smartphones lesen, schreiben und sichern... natürlich auch von Unbefugten, wenn das verschlüsselte Smartphone verloren wird. Entscheiden Sie also sorgfältig, welche Option Ihrem Bedarf am ehesten entspricht.
 
-Auf der Suche nach passenden Apps können Sie sich vor der Installation bei [Exodus Privacy](https://exodus-privacy.eu.org/en/) die Berechtigungen und Tracker von vielen Apps anzeigen lassen. Das Portal [MobilSicher.de](https://mobilsicher.de/themenpakete/appreview) bietet zahlreiche Empfehlungen für Datenschutzfreundliche Apps.
+# 5 Alternative App-Stores
+Man kann mit einem Android-Smartphone erstaunlich weit kommen, ohne ein Google-Konto einzurichten. Vermutlich wird in den meisten Fällen sogar kein Google-Konto benötigt. Hier nun zunächst ein Vorschlag, wie man ohne Google-Konto Apps installieren und updaten kann. Mehr zum Google-Play-Store bzw. einem Google-Konto dann im 6. Kapitel.
+
+Auf der Suche nach passenden Apps können Sie sich vor der Installation bei [Exodus Privacy](https://exodus-privacy.eu.org/en/) die Berechtigungen und Tracker von vielen Apps anzeigen lassen. Das Portal [MobilSicher.de](https://mobilsicher.de/themenpakete/appreview) bietet zahlreiche Empfehlungen für datenschutzfreundliche Apps.
+
+In diesem Kapitel finden Sie also zunächst eine Erklärung, wie Sie die zwei von uns empfohlenen AppStores installieren. Unser Tip: Überspringen Sie danach Kapitel 6 zum Google-Konto. Sie finden in Kapitel 7 dann ausreichend App-Emfpehlungen, die eigentlich jeden Bedarf abdecken und die Sie mit Hilfe von F-Droid und Aurora problemlos ohen Google-Konto installieren und nutzen können.
 
 ## 5.1 F-Droid
 F-Droid ist ein App-Store, der freie bzw. Open-Source-Software anbietet. F-Droid gibt es nicht im Playstore und muss daher [von der offiziellen Webseite](https://f-droid.org) heruntergeladen werden. Mit einem Klick im Downloadmanager oder im Downloads-Ordner auf die heruntergeladene apk-Datei kann man die Installation starten. (Sie müssen dazu die Installation von Apps aus der verwendeten Quelle - z.B. Chrome - zustimmen bzw. nach Aufforderung den Haken bei *Dieser Quelle Vertrauen* setzen.)
@@ -83,18 +109,22 @@ Mehr Informationen zu F-Droid und zahlreiche App-Empfehlungen findet man zum Bei
 
 Für die Installation neuer Apps empfiehlt sich F-Droid immer als erste Anlaufstelle.
 
+*Wichtig: Nach der Installation von F-Droid sollten Sie unbedingt Ihrem Browser wieder das Recht entziehen, Apps installieren zu dürfen!*
+
 ## 5.2 Aurora Store
 Sie wollen eine App aus dem Google-Play-Store installieren, die Sie bei F-Droid nicht finden konnten? Kein Problem!
 
-Installieren Sie sich zunächst über F-Droid den App-Store den [Aurora Store](https://f-droid.org/de/packages/com.aurora.store/). Über diesen kann man ohne Anmeldung (beim Start der App *anonymes Konto* auswählen) alle kostenlosen Apps aus dem Google-Play-Store herunterladen, installieren und aktualisieren.
+Installieren Sie sich zunächst über F-Droid den App-Store den [Aurora Store](https://f-droid.org/de/packages/com.aurora.store/). Über diesen kann man ohne Anmeldung (beim Start der App *anonymes Konto* auswählen, alle anderen Einstellunge unverändert lassen) alle kostenlosen Apps aus dem Google-Play-Store herunterladen, installieren und aktualisieren.
 
 (Bitte beachten Sie, dass der Aurora Store über das Tor-Netz nicht genutzt werden kann. Sie erreichen diesen nur über eine "offene" Internetverbindung.)
         
 # 6 Das Google-Konto
-Spätestes für die Installation kostenpflichtiger Apps aus dem Google-Play Store kommt man dann aber nicht mehr um die Einrichtung eines Google-Kontos herum, daher hier auch dazu ein paar Hinweise:
+Meistens benötigt man kein GoogleKonto. Zwar kann man über Aurora keine kostenpflichtigen Apps herunterladen, diese bekommt man aber häufig auch direkt über den Hersteller, so zum Beispiel den beliebten Messernger [Threema](https://shop.threema.ch/).
+
+Wenn man aber zwingend kostenpflichtige Apps aus dem GooglePlaystore benötigt, die sonst nirgendwo angeboten werden, kommt man dann aber nicht mehr um die Einrichtung eines Google-Kontos herum, daher hier auch dazu ein paar Hinweise:
 
 ## 6.1 Anlegen
-Das einrichten eines Google-Accounts bzw. die Nutzung des Google-Playstores ist auch ohne Angabe einer Handynummer möglich. Gehen Sie dazu am besten wie folgt vor:
+Das einrichten eines Google-Accounts bzw. die Nutzung des Google-Playstores ist meist auch ohne Angabe einer Handynummer möglich. Gehen Sie dazu am besten wie folgt vor:
 - Legen Sie sich bei einem Mailanbieter Ihrer Wahl ein Postfach an.
 - Öffnen Sie dann [diese Website](https://accounts.google.com/signUpWithoutGmail?hl=de) und tragen Sie hier fiktive Daten sowie eine E-Mail Adresse ein und vergeben Sie ein Passwort.
 - Bestätigen Sie den per Mail erhaltenen Code.
@@ -139,9 +169,21 @@ Weitere Empfehlungen und freie Alternativen zu kommerziellen Apps finden Sie in 
 
 ***Nach der Installation einer Alternative nicht vergessen, die ersetzte GoogleApp zu deinstallieren bzw. zu deaktivieren.***
 
-## 7.2 Weitere Empfehlungen 
+## 7.2 Messenger
+Messenger gibt es wie Sand am Meer und jeden Tag kommen drei neue dazu. Einen guten Überblick über die bekanntesten inkl. Bewertung bietet zum Beispiel die [Messenger-Matrix von Mike Kuketz](https://www.messenger-matrix.de/).
+
+Wir wollen uns hier darauf beschränken, Ihnen drei kostenlose, seriöse und Ende-zu-Ende-verschlüsselte Messenger für unterschiedliche Zwecke zu empfehlen:
+
+**Signal** kann [hier](https://signal.org/android/apk/) direkt von der Homepage des Herstellers geladen werden. Sofern Sie über eine Handynummer verfügen und bereit sind, diese mit Ihren Kontakten zu teilen, ist das vermutlich der bequemste und technisch beste moderne sichere Messenger. Signal unterstützt z.B. auch Gruppenchats, Telefonie, Sprachnachrichten und Videochats - und das alles verschlüsselt, ohne dass Sie sich damit befassen müssen.
+
+**Element** können Sie [https://f-droid.org/de/packages/im.vector.app/] direkt über F-Droid installieren. Sie benötigen lediglich ein Konto, dass Sie mit einer Mailadresse [hier](https://app.element.io/#/register) erstellen können. Element ist zwar nicht ganz so komfortabel wie Signal, verfügt aber über ähnliche Funktionen und ist inzwischen an einem Punkt angekommen, wo es auch durchschnittlichen Anwender:innen durchaus zugemutet werden kann. Klarer Vorteil: Sie müssen Ihre Handynummer nicht mit Ihren Kontakten teilen. Selbstverständlich ist auch hier alles Ende-zu-Ende-verschlüsselt.
+
+**Briar** routet sämtlichen Datenverkehr über das Tor-Netz und kommt ganz ohne Nutzerkonten oder persönliche Identifiyer wie z.B. Handynummern, Mailadressen etc. aus. Briar kann man ebenfalls [hier](https://f-droid.org/de/packages/org.briarproject.briar.android/) bequem über F-Droid installieren. Briar kann nur Textnachrichten verschicken, bietet dafür aber das höchstmögliche Maß an Anonymität und Sicherheit und kann zum Beispiel auch offline via Bluethooth von Gerät zu Gerät kommunizieren.
+
+## 7.3 Weitere Empfehlungen 
 - [Öffi](https://f-droid.org/de/packages/de.schildbach.oeffi/): Sehr gute App für die Navigation mit öffentlichen Verkehrsmitteln (Verbindungsabfragen, Echtzeitabfahrten, nahegelegene Haltestellen, interaktive Netzpläne usw.)
 - [AntennaPod](https://f-droid.org/de/packages/de.danoeh.antennapod/): Podcasts suchen, abonieren, hören, managen usw.
+- [NewPipe](https://f-droid.org/de/packages/org.schabi.newpipe/): YouTube-Videos ohne Werbung schauen. Kann Videos auch zum Offline-Gebrauch herunterladen.
 - [FOSS Weather](https://f-droid.org/de/packages/de.baumann.weather/): Umfangreiche Wetterangaben u.a. von DWD
 - [KeePassDX](https://f-droid.org/de/packages/com.kunzisoft.keepass.libre/): Ein guter Passwortmanager.
 - [MuPDF](https://f-droid.org/de/packages/com.artifex.mupdf.mini.app/): Zeigt PDFs an
@@ -167,7 +209,7 @@ Als letzter Schritt sollte eine der folgenden Apps installiert werden, die unerw
 
 - - - -
 
-# 9 Langfristige Routinen
+# 9 Langfristige Routinen und Empfehlungen
 ## 9.1 Software
 Bitte beachten Sie, dass diese Grundkonfiguration für einen sicheren Betrieb nicht ausreicht, da Ihr System z.B. durch Betriebssystemupdates immer wieder verändert wird. Auch Sie selbst als Nutzer:in ändern meist im Laufe der Zeit z.B. durch Installationen immer wieder Ihr Gerät.
 
@@ -180,13 +222,16 @@ Sie sollten also alle paar Monate die folgenden Schritte durchführen, um sicher
 - Auf dem Smartphone unter *Einstellungen -> Konten -> Google -> Google-Konto* die Einstellungen des Google-Kontos kritisch prüfen.
 
 ## 9.2 Laden
-Häufig werden Ihnen unterwegs USB-Buchsen zum Laden angeboten - sei es im Mietwagen, in Hotelzimmern, im ÖPNV oder z.B. im Einkaufszentrum. Um in solchen Situationen zu verhindern, dass mehr als nur Strom durch die Leitung geht, sollten Sie entweder nur mit dem eigenen Netzteil via Steckdosen Ihr Gerät aufladen, oder aber durch die überall erhältlichen *USB Data Blocker* sicherstellen, dass zum Laden nur Strom durchs Kabel kann.
+Häufig werden Ihnen unterwegs USB-Buchsen zum Laden angeboten - sei es im Mietwagen, in Hotelzimmern, im ÖPNV oder z.B. im Einkaufszentrum. Um in solchen Situationen zu verhindern, dass mehr als nur Strom durch die Leitung geht, sollten Sie entweder nur mit dem eigenen Netzteil via Steckdosen Ihr Gerät aufladen, oder aber durch die überall erhältlichen *USB Data Blocker* sicherstellen, dass zum Laden nur Strom durchs Kabel kann. 
+
+Wichtig: Nutzen Sie auch immer nur Ihre eigenen Ladekabel, da es inzwischen [Keylogger gibt, die in ein Kabel passen](https://www.vice.com/en/article/k789me/omg-cables-keylogger-usbc-lightning).
 
 ## 9.3 Regelmäßige Neustarts
 Regelmäßige Neustarts Ihres Smartphones (am besten täglich) tragen nicht nur zu einem flüssigen Betrieb des Gerätes bei, sondern machen auch potentiellen Angreifer:innen das Leben sehr schwer. Beim Neustart laden moderne Betriebssysteme nämlich in der Regel nur signierten Softwarecode - eine Hürde, die viel Schadsoftware nicht überwinden kann.
 
 ## 9.4 Handy ausschalten
 Bevor Sie Ihr Gerät aus den Händen geben (einschließen in einem Schließfach, ablegen in einem Büro, ohne Handy das Haus verlassen, etc.), sollten Sie dieses stets herunterfahren. Alternativ können Sie dieses auch Neustarten, so dass es direkt einsatzfähig ist, wenn Sie es wieder in die Hände nehmen. 
+
 Egal welchen Weg Sie wählen: Wichtig ist, dass Ihr Handy seit dem letzten Hochfahren noch nicht entsperrt wurde, wenn es ein Angreifer in die Hände bekommt. Im laufenden Betrieb nach dem ersten Entsperren des Gerätes sind Smartphones (Android wie iOS) nämlich deutlich leichter anzugreifen.
 
 # 10 Wenn das Smartphone den Besitzer wechseln soll
@@ -195,14 +240,17 @@ Sofern es sich vermeiden lässt, sollten verwendete Datenspeicher (In Laptops, S
 - ggf. wichtige Daten (Kontakte, Bilder, Kalenderdaten, E-Mail usw.) auf PC sichern
 - ggf. vorhandenes Google-Konto auf dem Gerät löschen
 - anschließend das Gerät „Auf Werkseinstellungen“ zurücksetzen (inkl. persönliche Daten löschen)
-- danach das Gerät ohne Google-Konto wie oben beschrieben neu einrichten (inkl. neuem PIN bzw. PW für die Displaysperre)
+- danach das Gerät ohne Google-Konto wie oben beschrieben neu einrichten (inkl. neuem und anderem PIN bzw. PW für die Displaysperre)
+- Gerätespeicher mit beliebigen Daten (z.B. Videos aus YouTube über NewPipe) füllen
 - wird das Gerät jetzt noch einmal „Auf Werkseinstellungen“ zurückgesetzt, sollten alte Kryptoschlüssel gelöscht/ überschrieben worden und somit ein Wiederherstellen der Daten mit „normalen Mitteln“ kaum noch möglich sein
 
 # 11 Das Kleingedruckte
 ## 11.1 Fehlerteufel
-Diese Anleitung wurde nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
+Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
 
-Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne Kontakt mit uns auf. Wir sind für jedes Feedback dankbar!
+Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne [Kontakt](https://lehrerlaempel.github.io/anleitungen/) mit uns auf. Wir sind tatsächlich sehr an Ihrer Rückmeldung interessiert!
+
+Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder Schäden am Gerät. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar.
 
 ## 11.2 Lizenz
 Dieser Text steht unter einer CC-Lizenz, ist also quasi schöpferisches Gemeingut.
@@ -215,7 +263,6 @@ Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die L
 
 Unter folgenden Bedingungen:
 - **Namensnennung** Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.
-- **Nicht kommerziell** Sie dürfen das Material nicht für kommerzielle Zwecke nutzen. 
 - **Weitergabe unter gleichen Bedingungen** Wenn Sie das Material remixen, verändern oder anderweitig direkt darauf aufbauen, dürfen Sie Ihre Beiträge nur unter derselben Lizenz wie das Original verbreiten. 
 - **Keine weiteren Einschränkungen** Sie dürfen keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt. 
 
@@ -223,7 +270,7 @@ Hinweise:
 - Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch Ausnahmen und Schranken des Urheberrechts gedeckt sind.
 - Es werden keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
-*Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode), die diese nicht ersetzt.*
+*Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
 
 ## 11.3 Externe Links
 Bitte erlauben Sie uns auch noch ein paar Wörter zu den auf dieser Seite gesetzten Links, wie sie von [eRecht24](https://www.e-recht24.de/muster-disclaimer.html) empfohlen werden:
