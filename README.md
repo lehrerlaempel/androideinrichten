@@ -1,5 +1,5 @@
 # Tutorial: Wie man Android sicher einrichtet (Eine Anleitung)
-v 4.0 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 4.1 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -116,7 +116,9 @@ Sie wollen eine App aus dem Google-Play-Store installieren, die Sie bei F-Droid 
 
 Installieren Sie sich zunächst über F-Droid den App-Store den [Aurora Store](https://f-droid.org/de/packages/com.aurora.store/). Über diesen kann man ohne Anmeldung (beim Start der App *anonymes Konto* auswählen, alle anderen Einstellunge unverändert lassen) alle kostenlosen Apps aus dem Google-Play-Store herunterladen, installieren und aktualisieren.
 
-(Bitte beachten Sie, dass der Aurora Store über das Tor-Netz nicht genutzt werden kann. Sie erreichen diesen nur über eine "offene" Internetverbindung.)
+*Bitte beachten Sie, dass der Aurora Store über das Tor-Netz nicht genutzt werden kann. Sie erreichen diesen nur über eine "offene" Internetverbindung.*
+
+*Manchmal endet der Versuch, über Aurora eine kostenfreie App herunterzuladen in der Fehlermedlung, dass die App noch nicht bezahlt sei. Erfahrungsgemäß hilft es hier, die Aurora App zu schließen und es noch einmal zu versuchen.*
         
 # 6 Das Google-Konto
 Meistens benötigt man kein GoogleKonto. Zwar kann man über Aurora keine kostenpflichtigen Apps herunterladen, diese bekommt man aber häufig auch direkt über den Hersteller, so zum Beispiel den beliebten Messernger [Threema](https://shop.threema.ch/).
@@ -158,9 +160,10 @@ Für die meisten meisten Googe-Apps gibt es offene und datenschutzfreundliche Al
 | Kontakte | [Schlichte Kontakte](https://f-droid.org/de/packages/com.simplemobiletools.contacts.pro/) |
 | Kalender | [Schlichter Kalender](https://f-droid.org/de/packages/com.simplemobiletools.calendar.pro/) oder [Etar](https://f-droid.org/de/packages/ws.xsoh.etar/)|
 | GoogleMaps | [OsmAnd](https://f-droid.org/de/packages/net.osmand.plus/) |
+| Kamera | [OpenCamera](https://f-droid.org/de/packages/net.sourceforge.opencamera) |
 | Foto | [Schlichte Gallerie](https://f-droid.org/de/packages/com.simplemobiletools.gallery.pro/)   |
 | Google Chrome | [Fennec](https://f-droid.org/de/packages/org.mozilla.fennec_fdroid/) oder [TorBrowser](https://play.google.com/store/apps/details?id=org.torproject.torbrowser)|
-| GMail | [K-9 Mail](https://f-droid.org/de/packages/com.fsck.k9/) |
+| GMail | [K-9 Mail](https://f-droid.org/de/packages/com.fsck.k9/) oder [FairEmail](https://f-droid.org/de/packages/eu.faircode.email)|
 | Youtube | [NewPipe](https://f-droid.org/de/packages/org.schabi.newpipe/) |
 
 Außerdem empfehlenswert ist der [LibreOffice und OpenOffice Dokumentenbetrachter](https://f-droid.org/de/packages/at.tomtasche.reader/), der neben gängigen Office-Formaten auch viele Bild- und Videoformate abspielen kann.
@@ -190,6 +193,7 @@ Wir wollen uns hier darauf beschränken, Ihnen drei kostenlose, seriöse und End
 - [SecScanQR](https://f-droid.org/de/packages/de.t_dankworth.secscanqr/): QR-Code Scanner
 - [Odyssey](https://f-droid.org/de/packages/org.gateshipone.odyssey/): Musikplayer
 - [Open Camera](https://f-droid.org/de/packages/net.sourceforge.opencamera/): Kamera mit vielen Einstellungsmöglichkeiten
+- [AnutoTD](https://f-droid.org/de/packages/ch.logixisland.anuto): Ein lustiges TowerDefense-Spiel (Achtung: Suchgefahr!)
 
 # 8 Unerwünschten Datenverkehr unterdrücken
 Als letzter Schritt sollte eine der folgenden Apps installiert werden, die unerwünschten Datenverkehr von Apps und dem Betriebssystem selbst verhindert. Diese simulieren dem Gerät eine VPN-Verbindung und unterdrücken dann unerwünschte Anfragen. 
