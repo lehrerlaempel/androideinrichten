@@ -1,16 +1,14 @@
 # Tutorial: Wie man Android sicher einrichtet (Eine Anleitung)
-v 4.1 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 4.2 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
 # Vorwort
 Diese Anleitung soll dabei helfen, Android-Smartphones sicher einzurichten. Mit *sicher* ist dabei einerseits ein so datenschutzfreundliches und schwer anzugreifendes Gerät wie möglich gemeint. Andererseits soll sich diese Anleitung aber auf Maßnahmen beschränken, die durchschnittliche Anwender:innen nicht überfordern und die alltägliche Benutzung des Handys möglichst wenig beeinflussen. Es geht hier also explizit nicht um ein möglichst gehärtetes System für maximalen Schutz, sondern um so viel Sicherheit, wie ohne größere Einschränkungen eben möglich ist.
 
-*Für sicherheitsempfindliche Einsatzszenarien sollte zunächst ein Google-freies System wie zum Beispiel [LineageOS](https://lineageos.org/) oder besser [GrapheneOS](https://grapheneos.org/) auf dem Smartphone installiert werden. Mehr dazu z.B. [hier](https://www.kuketz-blog.de/grapheneos-das-android-fuer-sicherheits-und-datenschutzfreaks/) und [hier](https://www.kuketz-blog.de/android-ohne-google-take-back-control-teil1/). Für alle, die selbst kein Betriebssystem auf einem Smartphone installieren wollen: Es gibt auch Handys, die bereites mit einem Android ohne GoogleDienste verkauft werden, z.B. [hier](https://esolutions.shop/). Alternativ kann für sensible Einsatzzwecke ein speziell vom Hersteller für sicherheitsempfindliche Szenarien entwickeltes Geräte verwendet werden, wie z.B. ein [NitroPhone](https://www.nitrokey.com/de/news/2021/nitrophone-das-sicherste-android-des-planeten), das bereits sicher konfiguriert beim Kunden ankommt. Dies alles ist jedoch explizit nicht Thema dieses Tutorials. Wir gehen für diese Anleitung davon aus, dass Sie prinzipiell kein Problem mit GoogleDiensten auf Ihrem Smartphone haben und das gekaufte gewöhnliche Smartphone mit dem vorinstallierte Betriebssystem nutzen möchten.*
-
 Es wird übrigens dringend empfohlen, die Anleitung in der hier beschriebenen Reihenfolge zu durchlaufen. Sofern Sie aber bereits vor einem installierten Handy sitzen und nicht alles neu aufsetzen können oder wollen, können Sie sich aber auch selbstverständlich einzelne Kapitel herauspicken. Lieber nur einzelne Maßnahmen dieser Anleitung umsetzen, als keine!
 
-Bevor es endlich losgeht: Diese Anleitung beinhaltet lediglich allgemeine Empfehlungen. Es kann durchaus sein, dass diese Anleitung Fehler enthält oder aufgrund anderer Soft-/Hardware einige Punkte auf Ihrem System anders heißen. Haben Sie Mut, Ihr System selbst einzurichten. Wir möchten Sie mit dieser Anleitung dabei unterstützen. Aber zögern Sie bei Fragen bitte nie, sich im Internet oder bei fachkundigen Personen aus Ihrem Umfeld Hilfe zu holen.
+Bevor es losgeht: Diese Anleitung beinhaltet lediglich allgemeine Empfehlungen. Es kann durchaus sein, dass diese Anleitung Fehler enthält oder aufgrund anderer Soft-/Hardware einige Punkte auf Ihrem System anders heißen. Haben Sie Mut, Ihr System selbst einzurichten. Wir möchten Sie mit dieser Anleitung dabei unterstützen. Aber zögern Sie bei Fragen bitte nie, sich im Internet oder bei fachkundigen Personen aus Ihrem Umfeld Hilfe zu holen.
 
 # 1 Welches Gerät kaufen?
 Das Angebot an Android-Geräten ist gefühlt fast unendlich groß. Es gibt zahlreiche Hersteller, die meist mehrmals im Jahr neue Geräte vorstellen. Für welches Gerät Sie sich entscheiden, sollten Sie dabei aber nicht nur von persönlichem Geschmack oder Sympathie zu einer bestimmen Marke abhängig machen. 
@@ -248,15 +246,26 @@ Sofern es sich vermeiden lässt, sollten verwendete Datenspeicher (In Laptops, S
 - Gerätespeicher mit beliebigen Daten (z.B. Videos aus YouTube über NewPipe) füllen
 - wird das Gerät jetzt noch einmal „Auf Werkseinstellungen“ zurückgesetzt, sollten alte Kryptoschlüssel gelöscht/ überschrieben worden und somit ein Wiederherstellen der Daten mit „normalen Mitteln“ kaum noch möglich sein
 
-# 11 Das Kleingedruckte
-## 11.1 Fehlerteufel
+# 11 Nachwort
+Für sicherheitsempfindliche Einsatzszenarien sollte ein Google-freies System wie zum Beispiel [LineageOS](https://lineageos.org/) oder besser [GrapheneOS](https://grapheneos.org/) auf dem Smartphone installiert werden. Mehr dazu z.B. [hier](https://www.kuketz-blog.de/grapheneos-das-android-fuer-sicherheits-und-datenschutzfreaks/) und [hier](https://www.kuketz-blog.de/android-ohne-google-take-back-control-teil1/). 
+
+Für alle, die selbst kein Betriebssystem auf einem Smartphone installieren wollen: Es gibt auch Handys, die bereits mit einem Android ohne GoogleDienste verkauft werden, z.B. [hier](https://esolutions.shop/) oder [hier](https://volla.online/de/shop/). Alternativ kann für sensible Einsatzzwecke auch ein speziell vom Hersteller für sicherheitsempfindliche Szenarien entwickeltes Geräte verwendet werden, wie z.B. ein [NitroPhone](https://www.nitrokey.com/de/news/2021/nitrophone-das-sicherste-android-des-planeten), das bereits sicher konfiguriert beim Kunden ankommt. 
+
+Es gibt inzwischen neben iOS und Android auch noch eine dritte Sparte Smartphones, die ganz ohne Technologie von Apple und Google auskommt: Linux-Smartphones. Die Geräte wie z.B. das [PinePhone](https://www.pine64.org/pinephone/) sind nach unserer Einschätzung zwar sehr faszinierend, aber derzeit noch weit davon entfernt, eine verlässliche Alternative für durchschnittliche Anwender:innen zu bieten.
+
+Bleibt noch iOS. Ist ein iPhone nicht sicherer als ein Android? Kurzfassung: Nein. Es hat vermutlich primär historische Gründe, dass diese Fehlannahme so weit verbreitet ist. Fakt ist: Ein iPhone ist keine Lösung für alle, die auf der Suche nach einem möglichst sicheren und datensparsamen Gerät sind. iOS ist nicht sicherer oder schwerer anzugreifen als Andorid. Im Gegenteil: iOS lässt dem Nutzer kaum Möglichkeiten, das System nennenswert zu härten oder auf das Wesentliche zurechtzustutzen. Daher gibt es von uns auch keine Anleitung zu dem Thema.
+
+Dies alles ist jedoch explizit nicht Thema dieses Tutorials. Wir gehen für diese Anleitung davon aus, dass Sie prinzipiell kein Problem mit GoogleDiensten auf Ihrem Smartphone haben und das gekaufte gewöhnliche Smartphone mit dem vorinstallierte Betriebssystem nutzen möchten. Alles weitere dann hoffentlich bald in einer separaten Anleitung zur Installation alternativer Android-Betriebssysteme.
+
+# 12 Das Kleingedruckte
+## 12.1 Fehlerteufel
 Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
 
 Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne [Kontakt](https://lehrerlaempel.github.io/anleitungen/) mit uns auf. Wir sind tatsächlich sehr an Ihrer Rückmeldung interessiert!
 
 Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder Schäden am Gerät. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar.
 
-## 11.2 Lizenz
+## 12.2 Lizenz
 Dieser Text steht unter einer CC-Lizenz, ist also quasi schöpferisches Gemeingut.
 
 Sie dürfen:
@@ -276,12 +285,12 @@ Hinweise:
 
 *Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
 
-## 11.3 Externe Links
+## 12.3 Externe Links
 Bitte erlauben Sie uns auch noch ein paar Wörter zu den auf dieser Seite gesetzten Links, wie sie von [eRecht24](https://www.e-recht24.de/muster-disclaimer.html) empfohlen werden:
 
 Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
-# 12 Ausblick/ToDo
+# 13 Ausblick/ToDo
 Die folgenden Punkte sollen zukünftig noch in dieser Anleitung ergänzt werden:
 - BackUp-Möglichkeiten ergänzen
 - Kurzfassung voranstellen
