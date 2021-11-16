@@ -1,5 +1,5 @@
 # Tutorial: Wie man Android sicher einrichtet (Eine Anleitung)
-v 4.2 | Stand: September 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 4.4 | Stand: November 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -9,6 +9,8 @@ Diese Anleitung soll dabei helfen, Android-Smartphones sicher einzurichten. Mit 
 Es wird übrigens dringend empfohlen, die Anleitung in der hier beschriebenen Reihenfolge zu durchlaufen. Sofern Sie aber bereits vor einem installierten Handy sitzen und nicht alles neu aufsetzen können oder wollen, können Sie sich aber auch selbstverständlich einzelne Kapitel herauspicken. Lieber nur einzelne Maßnahmen dieser Anleitung umsetzen, als keine!
 
 Bevor es losgeht: Diese Anleitung beinhaltet lediglich allgemeine Empfehlungen. Es kann durchaus sein, dass diese Anleitung Fehler enthält oder aufgrund anderer Soft-/Hardware einige Punkte auf Ihrem System anders heißen. Haben Sie Mut, Ihr System selbst einzurichten. Wir möchten Sie mit dieser Anleitung dabei unterstützen. Aber zögern Sie bei Fragen bitte nie, sich im Internet oder bei fachkundigen Personen aus Ihrem Umfeld Hilfe zu holen.
+
+Übrigens: Auch [James Bond setzt auf Android](https://www.wired.com/story/why-james-bond-doesnt-use-iphone/), aber zurück zum Thema 0:-)
 
 # 1 Welches Gerät kaufen?
 Das Angebot an Android-Geräten ist gefühlt fast unendlich groß. Es gibt zahlreiche Hersteller, die meist mehrmals im Jahr neue Geräte vorstellen. Für welches Gerät Sie sich entscheiden, sollten Sie dabei aber nicht nur von persönlichem Geschmack oder Sympathie zu einer bestimmen Marke abhängig machen. 
@@ -194,12 +196,16 @@ Wir wollen uns hier darauf beschränken, Ihnen drei kostenlose, seriöse und End
 - [AnutoTD](https://f-droid.org/de/packages/ch.logixisland.anuto): Ein lustiges TowerDefense-Spiel (Achtung: Suchgefahr!)
 
 # 8 Unerwünschten Datenverkehr unterdrücken
-Als letzter Schritt sollte eine der folgenden Apps installiert werden, die unerwünschten Datenverkehr von Apps und dem Betriebssystem selbst verhindert. Diese simulieren dem Gerät eine VPN-Verbindung und unterdrücken dann unerwünschte Anfragen. 
+Als letzter Schritt sollte eine Lösung gefunden werden, die unerwünschten Datenverkehr von Apps und dem Betriebssystem selbst verhindert. 
 
-*(Die folgenden Apps funktionieren also nicht, wenn man einen kommerziellen VPN-Dienst nutzen möchte! Wir empfehlen daher den Verzicht auf ein VPN. Nutzen Sie stattdessen lieber eine der folgenden Apps und verschleiern Sie beim Surfen dann Ihre Herkunft durch das Nutzen des [TorBrowsers](https://play.google.com/store/apps/details?id=org.torproject.torbrowser).)*
+## 8.1 Der gründliche Weg
 
-- [Blokada](https://f-droid.org/de/packages/org.blokada.fem.fdroid/): Tolle App um Werbung und Tracking zu unterbinden. DIe App ermöglicht es auch sehr einfach, ein alternatives DNS festzulegen. Die Bedienung ist relativ einfach und auch für Einsteiger:innen machbar.
-- [NetGuard](https://f-droid.org/de/packages/eu.faircode.netguard/): Die vielleicht beste Firewall für Android, die auch Werbe- und Trackingdomains filtern kann. Kuketz schreibt zur App: *"Die Kombination aus Firewall + Filterlisten ist äußerst mächtig, erfordert allerdings auch ein hohes Maß an Disziplin und Einarbeitungszeit."* Aber die Mühe lohnt sich! Eine Anleitung zur Einrichtung findet man z.B. [hier](https://www.kuketz-blog.de/netguard-firewall-android-unter-kontrolle-teil4/).
+Dazu bieten sich die folgenden Apps an, die dem Gerät eine VPN-Verbindung simulieren und dann unerwünschte Verbindungen (z.B. Werbung oder Tracking) unterdrücken.
+- [Blokada](https://f-droid.org/de/packages/org.blokada.fem.fdroid/): Tolle App um Werbung und Tracking zu unterbinden. Die App ermöglicht es auch sehr einfach, ein alternatives DNS festzulegen. Die Bedienung ist relativ einfach und auch für Einsteiger:innen machbar.
+- [NetGuard](https://f-droid.org/de/packages/eu.faircode.netguard/): Die vielleicht beste Firewall für Android, die auch Werbe- und Trackingdomains filtern kann. Kuketz schreibt zur App: *"Die Kombination aus Firewall + Filterlisten ist äußerst mächtig, erfordert allerdings auch ein hohes Maß an Disziplin und Einarbeitungszeit."* Aber die Mühe lohnt sich! Eine Anleitung zur Einrichtung findet man z.B. [hier](https://www.kuketz-blog.de/netguard-firewall-android-unter-kontrolle-teil4/). Kleiner Hinweis: Nach der Einrichtung sollte der GPSDeamon noch das Recht besitzen, ins Netz zu gehen, sonst dauert es ewig, bis das Handy einen Standort findet.
+
+## 8.2 Der einfache Weg
+Es sind Szenarien denkbar, in denen der in 8.1 beschriebene Weg nicht in Frage kommt; Vielleicht weil man ein VPN nutzen möchte oder weil es die Nutzer:innen überfordert. Für solche Fälle kann als "Schmalspurlösung" einfach im Smartphone ein manuelles DNS eintragen, das bestimmte Anfragen filtert, indem es diese einfach nicht übersetzt. Eine Anleitung und mögliche DNS-Server findet man [hier](https://www.kuketz-blog.de/fuer-anfaenger-bequeme-werbung-und-tracker-unter-ios-android-systemweit-verbannen/).
 
  - - -
 
@@ -259,11 +265,13 @@ Dies alles ist jedoch explizit nicht Thema dieses Tutorials. Wir gehen für dies
 
 # 12 Das Kleingedruckte
 ## 12.1 Fehlerteufel
-Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen.
+Diese Anleitung wurde von [lehrerlaempel](https://github.com/lehrerlaempel) nach bestem Wissen und Gewissen erstellt. Wir haben die feste Absicht, diese im Laufe der Zeit an Änderungen der erwähnten Software anzupassen und um weitere Aspekte zu ergänzen. Den Stand der Ihnen vorliegenden Version finden Sie ganz am Anfang der Seite.
 
 Ihnen sind Fehler aufgefallen? Sie haben Verbesserungs- oder Änderungswünsche? Dann nehmen Sie gerne [Kontakt](https://lehrerlaempel.github.io/anleitungen/) mit uns auf. Wir sind tatsächlich sehr an Ihrer Rückmeldung interessiert!
 
-Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder Schäden am Gerät. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar.
+Im Rahmen unserer Möglichkeiten haben wir auch versucht sicherzustellen, dass sowohl diese Seite selbst, als auch die von uns verlinkten Seiten sowohl legaler als auch legitimer Natur sind. Sollten uns Fehler unterlaufen sein oder wir änderungen verlinkter Seiten verpasst ahaben, geben Sie und gerne ein Zeichen, damit wir das zeitnah beheben können.
+
+Wir übernehmen explizit keinerlei Haftung für die hier getroffenen Aussagen oder möglicherweise daraus entstandene Datenverluste oder sonstigen Schäden. Wir haben diese Texte nach bestem Wissen und Gewissen verfasst, sind aber wie alle Menschen fehlbar. Verstehen Sie diese Anleitungen also bitte als aufrichtig wohlmeindende Ratschläge auf Augenhöhe, jedoch ohne jede Gewähr.
 
 ## 12.2 Lizenz
 Dieser Text steht unter einer CC-Lizenz, ist also quasi schöpferisches Gemeingut.
@@ -284,14 +292,3 @@ Hinweise:
 - Es werden keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
 *Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
-
-## 12.3 Externe Links
-Bitte erlauben Sie uns auch noch ein paar Wörter zu den auf dieser Seite gesetzten Links, wie sie von [eRecht24](https://www.e-recht24.de/muster-disclaimer.html) empfohlen werden:
-
-Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-
-# 13 Ausblick/ToDo
-Die folgenden Punkte sollen zukünftig noch in dieser Anleitung ergänzt werden:
-- BackUp-Möglichkeiten ergänzen
-- Kurzfassung voranstellen
-- Benötigte Zeit für die einzelnen Schritte ergänzen
