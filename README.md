@@ -1,5 +1,5 @@
 # Tutorial: Wie man Android sicher einrichtet (Eine Anleitung)
-v 4.4 | Stand: November 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 4.5 | Stand: Dezember 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -24,7 +24,7 @@ Sollten Sie sich für ein anders Gerät entscheiden, stellen Sie unbedingt vor d
 # 2 Vorbereitung der Hardware
 Vor dem ersten Gerätestart sollten die **Kameras** (mindestens die Frontkamera) mit einer Abdeckung oder einem blickdichtem Aufkleber verdeckt werden. Diese sollten nur bei Bedarf entfernt und danach wieder angebracht werden.
 
-Es empfiehlt sich zum Schutz vor Lauschangriffen durch Sprachassistenten oder Schadsoftware auch, das **Mikrofon** zu deaktivieren, wann immer dieses nicht benötigt wird. Anders als z.B. bei einem Laptop gestaltet sich das bei für durchschnittliche Anwender:innen bei einem Smartphone jedoch relativ schwierig. Ein günstiger und einfacher aber interessanter Ausweg sind kleine Stecker wie z.B. der *CAMeleon Mikrofon Blocker* oder der *Privise Mikrofon Blocker*, die für das Smartphone ein Headset simulieren und dadurch einen guten Grundschutz vor unerwünschtem Horchen bieten. Leider gibt das Gerät dann auch erstmal keinen Ton mehr aus, solange der Stecker im Gerät ist.
+Es empfiehlt sich zum Schutz vor Belauschtwerden durch Sprachassistenten oder Schadsoftware auch, das **Mikrofon** zu deaktivieren, wann immer dieses nicht benötigt wird. Anders als z.B. bei einem Laptop gestaltet sich das bei für durchschnittliche Anwender:innen bei einem Smartphone jedoch relativ schwierig. Ein günstiger und einfacher aber interessanter Ausweg sind kleine Stecker wie z.B. der *CAMeleon Mikrofon Blocker* oder der *Privise Mikrofon Blocker*, die für das Smartphone ein Headset simulieren und dadurch einen guten Grundschutz vor unerwünschtem Horchen bieten. Leider gibt das Gerät dann auch erstmal keinen Ton mehr aus, solange der Stecker im Gerät ist.
 
 Wenn die Stecker für Sie keine Lösung sind, werden Sie wohl erstmal damit leben müssen, ein aktiviertes Mikrofon durch die Gegen zu tragen. Wichtig ist dann vor allem, dass Sie sich dessen bewusst sind und das Gerät vielleicht nicht ausgerechnet mit ins Schlafzimmer oder die nächste Besprechung nehmen. Auch wenn man sich das heute kaum noch vorstellen kann: Ein Smpartphone muss seiner Besitzerin nicht überall hin auf Schritt und Tritt folgen. ;-)
 
@@ -292,3 +292,4 @@ Hinweise:
 - Es werden keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
 *Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
+
