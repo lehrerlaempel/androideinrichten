@@ -1,5 +1,5 @@
 # Tutorial: Wie man Android sicher einrichtet (Eine Anleitung)
-v 4.5 | Stand: Dezember 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+v 4.6 | Stand: Dezember 2021 | Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 Weitere Anleitungen von uns findet man [hier](https://lehrerlaempel.github.io/anleitungen/)!
 
@@ -183,7 +183,12 @@ Wir wollen uns hier darauf beschränken, Ihnen drei kostenlose, seriöse und End
 
 **Briar** routet sämtlichen Datenverkehr über das Tor-Netz und kommt ganz ohne Nutzerkonten oder persönliche Identifiyer wie z.B. Handynummern, Mailadressen etc. aus. Briar kann man ebenfalls [hier](https://f-droid.org/de/packages/org.briarproject.briar.android/) bequem über F-Droid installieren. Briar kann nur Textnachrichten verschicken, bietet dafür aber das höchstmögliche Maß an Anonymität und Sicherheit und kann zum Beispiel auch offline via Bluethooth von Gerät zu Gerät kommunizieren.
 
-## 7.3 Weitere Empfehlungen 
+# 7.3 Anti-Stalking
+Apple hat Stalkting bzw. heimliches Tracking unfassbar einfach gemacht. Ein [AirTag](https://www.apple.com/de/airtag/) ist ein Gerät in der Größe einer Münze, das mit einer einzigen Knopfzelle circa ein Jahr lang zuverlässig seinen Standort an die Besitzerin meldet. iPhone Nutzer:innen erhalten eine Warnung, wenn sich fremde AirTags lange in Ihrer Nähe bewegen. Man kann jetzt darüber streiten, ob iPhones früh genug warnen, aber immerhin warnen sie irgendwann. Android-Nutzer:innen hingegen erfahren erstmal nichts von dem Stalking.
+
+Daher möchten wir Ihnen wärmstens die App [AirGuard - AirTag tracking protection](https://f-droid.org/de/packages/de.seemoo.at_tracking_detection/) aus dem F-Droid Store empfehlen. Diese warnt Sie vor AirTags, die sich in Bluetooth-Reichweite mit Ihnen mitbewegen. Sollte Ihnen also jemand einen AirTag untergeschoben oder z.B. [an ihrem Auto befestig haben](https://www.golem.de/news/kanadische-polizei-diebe-nutzen-apples-airtags-zum-tracking-von-luxuswagen-2112-161574.html?_medium=widget.hp), dann erhalten Sie von AirGuard eine Meldung, dass Sie ungewünschte Mitreisende haben.
+
+## 7.4 Weitere Empfehlungen 
 - [Öffi](https://f-droid.org/de/packages/de.schildbach.oeffi/): Sehr gute App für die Navigation mit öffentlichen Verkehrsmitteln (Verbindungsabfragen, Echtzeitabfahrten, nahegelegene Haltestellen, interaktive Netzpläne usw.)
 - [AntennaPod](https://f-droid.org/de/packages/de.danoeh.antennapod/): Podcasts suchen, abonieren, hören, managen usw.
 - [NewPipe](https://f-droid.org/de/packages/org.schabi.newpipe/): YouTube-Videos ohne Werbung schauen. Kann Videos auch zum Offline-Gebrauch herunterladen.
@@ -215,7 +220,7 @@ Es sind Szenarien denkbar, in denen der in 8.1 beschriebene Weg nicht in Frage k
 
 ***Ein gut konfiguriertes Gerät ist jedoch kein Allheilmittel! Sie sollten stets umsichtig mit Ihrem Smartphone umgehen und vor allem bei der Installation von Software, dem Einstecken von Wechselmedien und dem Download von Daten auf vertrauenswürdige Quellen achten!***
 
-- - - -
+ - - - -
 
 # 9 Langfristige Routinen und Empfehlungen
 ## 9.1 Software
@@ -292,4 +297,3 @@ Hinweise:
 - Es werden keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
 *Dies war eine allgemeinverständliche Zusammenfassung der [Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), die diese nicht ersetzt.*
-
